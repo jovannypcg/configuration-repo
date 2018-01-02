@@ -1,0 +1,47 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  datasource:
+    url: jdbc:h2:file:~/stats_safety_poc_qa
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+server:
+  port: 3000
+
+stats:
+  secret: a4b05d01c8c57f22d58c84b6202a8ab6
+  indochina_timezone: -420
+  eastern_north_america_timezone: 240
+  western_north_america_timezone: 660
+  us_country: US
+  indochina_timezone_countries:
+    - vn
+    - ru
+    - id
+    - mn
+    - th
+    - kh
+    - la
+    - au
+  available_langs:
+    - ar
+    - en
+    - de
+    - pt
+    - vi
+    - id
+    - hi
+    - ru
+    - zh
+    - it
+    - es
+    - fr
+    - tr
+    - ja
